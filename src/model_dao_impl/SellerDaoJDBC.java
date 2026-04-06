@@ -80,7 +80,11 @@ public class SellerDaoJDBC implements SellerDao {
 			st.setInt(5, obj.getDepartment().getId());
 			st.setInt(6, obj.getId());
 			
-			st.executeUpdate();
+			int rows = st.executeUpdate();
+			
+			if (rows == 0) {
+				throw new DbException("Id não existe, nenhum registro foi atualizado");
+			}
 			
 			}
 		catch (SQLException e) {
