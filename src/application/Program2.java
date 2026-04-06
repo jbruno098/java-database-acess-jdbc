@@ -22,5 +22,8 @@ public class Program2 {
 		    System.out.println("Departamento não encontrado.");
 		}
 		
+		// teste DELETE
+		departmentDao.deleteById(9);
+		System.out.println("Departamento deletado com sucesso!");
 	}
 } 
