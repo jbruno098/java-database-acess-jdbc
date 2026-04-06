@@ -8,18 +8,19 @@ public class Program2 {
 
 	public static void main(String[] args) {
 		
-		// Teste 1 metodo insert
+		// Teste metodo findById
 		DepartmentDao departmentDao = DaoFactory.createDepartmentDao();
-		
-		Department dep = new Department(5, "Games");
-		//departmentDao.insert(dep);
-		System.out.println("Adicionado novo departamento: ID: " + dep.getId()
-							+ "\nNome: " + dep.getName()); 
-		
-		// Teste 2 metodo update
-		dep.setName("Tools");
-		departmentDao.update(dep);
-		System.out.println("Dados Atualizados! Novo Nome: " + dep.getName());
-	}
 
-}
+		Department dep = departmentDao.findById(1);
+
+		if (dep != null) {
+		    System.out.println("Departamento encontrado:");
+		    System.out.println("ID: " + dep.getId());
+		    System.out.println("Nome: " + dep.getName());
+		}
+		else {
+		    System.out.println("Departamento não encontrado.");
+		}
+		
+	}
+} 
