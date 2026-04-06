@@ -1,5 +1,7 @@
 package application;
 
+import java.util.List;
+
 import model_dao.DaoFactory;
 import model_dao.DepartmentDao;
 import model_entities.Department;
@@ -22,8 +24,12 @@ public class Program2 {
 		    System.out.println("Departamento não encontrado.");
 		}
 		
-		// teste DELETE
-		departmentDao.deleteById(9);
-		System.out.println("Departamento deletado com sucesso!");
+		// teste FindAll
+
+		List<Department> list = departmentDao.findAll();
+
+		for (Department depart : list) {
+		    System.out.println(depart);
+		}
 	}
 } 
