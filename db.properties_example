@@ -1,0 +1,14 @@
+# =========================================
+
+# Database configuration example
+
+# Rename this file to: db.properties
+
+# and fill with your local database data
+
+# =========================================
+
+user=YOUR_DATABASE_USER
+password=YOUR_DATABASE_PASSWORD
+dburl=jdbc:mysql://localhost:3306/coursejdbc
+useSSL=false
