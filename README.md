@@ -4,6 +4,11 @@ Projeto desenvolvido durante os estudos de **Java Orientado a Objetos** com foco
 
 O objetivo do projeto foi compreender na prática como aplicações backend Java realizam operações CRUD diretamente no banco de dados, sem o uso de frameworks como Spring ou Hibernate.
 
+## Projeto relacionado
+
+Também desenvolvi uma segunda versão deste projeto utilizando Spring Boot e JPA.
+
+- Versão Spring Boot: https://github.com/jbruno098/java-database-access-springboot
 ---
 
 ## 🚀 Tecnologias utilizadas
